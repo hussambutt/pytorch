@@ -83,3 +83,5 @@ RUN wget --quiet "https://github.com/conda-forge/miniforge/releases/download/${m
 #RUN conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c nvidia
 # RUN conda activate cuda11 && \
 RUN pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+
+RUN pip install tensorflow-gpu
